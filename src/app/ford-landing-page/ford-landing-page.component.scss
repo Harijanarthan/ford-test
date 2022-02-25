@@ -1,0 +1,77 @@
+.container{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.logo-label{
+    color: rgb(19, 19, 83);
+    padding-left: 10px;
+    font-family: 'Lucida Sans Regular';
+    font-weight: 600;
+}
+mat-icon{
+    color: rgb(19, 19, 83);
+}
+.profile-name{
+    color: rgb(19, 19, 83);
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: 'Lucida Sans Regular';
+    font-weight: 600;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.btn-toolbar{
+    background: none;
+    border-radius: 5px;
+    box-shadow: -3px 0px 14px -6px rgba(0,0,0,0.28);
+}
+button{
+    width: 100%;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+    background: rgb(19, 19, 83);
+}
+button.mat-flat-button {
+    background-color: rgb(19, 19, 83);    
+}
+.card-area{
+    margin-top: 1em;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+//   column-gap: 0;
+  row-gap: 50px;
+//   grid-auto-rows: minmax(100px, auto);
+}
+.mat-card:not([class*=mat-elevation-z]) {
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    max-width: 200px;
+    height: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    border-radius:20px;
+    box-shadow: -3px 0px 14px -6px rgba(0,0,0,0.28);
+    mat-card-content img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    mat-card-content .card-label{
+        position: absolute;
+        text-align: center;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: rgb(19, 19, 83);
+        padding-left: 10px;
+        font-family: 'Lucida Sans Regular';
+        font-weight: 600;
+    }
+}

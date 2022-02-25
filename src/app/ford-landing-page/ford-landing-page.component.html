@@ -1,0 +1,27 @@
+<div class="container">
+        <mat-toolbar style="background: none;">
+            <img src="assets/Ford-Logo.png" alt="Ford Logo" width="80" height="60">
+        <label class="logo-label">Always ON</label>
+        <span class="example-spacer"></span>
+      
+        <label class="profile-name">FABDULAZ</label>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>
+       
+      </mat-toolbar>
+      <mat-toolbar class="btn-toolbar">
+        <button mat-flat-button color="primary">Choose Program</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button routerLink="/json" mat-flat-button color="primary">Choose Plant</button>
+      </mat-toolbar>
+    <div class="card-area">
+        <mat-card *ngFor="let data of MockData;">
+            <!-- <mat-card-title>Actions Buttons</mat-card-title>
+            <mat-card-subtitle>Start</mat-card-subtitle> -->
+            <mat-card-content>
+                <img [src]="data.image" alt="Ford Logo" width="120" height="100">
+                <label class="card-label">{{data.label}}</label>
+            </mat-card-content>
+          </mat-card>
+    </div>  
+</div>
+
