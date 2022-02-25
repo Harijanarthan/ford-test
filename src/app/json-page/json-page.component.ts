@@ -14,10 +14,14 @@ export class JsonPageComponent implements OnInit {
 
   ngOnInit(): void {
     // console.log('mockJsonData:',this.mockJsonData);
-    this.removeProperty('abstract');
+    this.removeProperty();
   }
-  removeProperty(propertyName:any):any{
+  removeProperty():any{
     this.mockJsonData.response.docs.forEach(element => {
+      delete element.journal;
+      delete element.eissn;
+      delete element.publication_date;
+      delete element.article_type;
       delete element.abstract;
     });
     this.filterJson(2);
